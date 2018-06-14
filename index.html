@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> Suso Technology </title> 
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" />
+    <link href="tech.css" rel="stylesheet" />
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+
+<body>
+   <!-- 
+    <header class="container-fluid">
+        <h1> Suso Technology</h1>
+    </header>
+        -->
+        <!--<nav class="container-fluid"> -->
+        <nav class="navbar navbar-inverse navber-nav">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Suso Technology</a>
+                </div>
+           <!-- <ul class="nav navber-inverse navber-nav"> -->
+               <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="https://www.theguardian.com/us/technology">Technology News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="Aboutus.html">About Us</a></li>
+            </ul>
+             <ul class="nav navbar-inverse navbar-right">
+                <li><a href="singup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+             </ul>
+        </nav>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <section class="col-sm-6 col-sm-push-3">
+                <div class="row">
+                    <article>
+                        <h2 class="title"> The Ransomware</h2>
+                        <div class="col-sm-3">
+                            <img src="http://lorempixel.com/200/100/city/1" />
+                        </div>
+                        <div class="col-sm-9">
+                            <p> As odd as it sounds, the ransomware attack that swept across the world over the past few days
+                                wasn't about the money. GoldenEye, also known as NotPetya, swarmed computers on Tuesday,
+                                locking up devices at multibillion-dollar companies including FedEx, Merck, Cadbury and AP
+                                Moller-Maersk. Combined, these four companies are worth about $130 billion -- big targets
+                                with fat wallets. You'd think the hackers would ask for more than $300 per hijacked computer.
+                                But now experts believe nation-state attackers are using ransomware as a screen, tempting
+                                victims to blame faceless hackers instead of the countries allegedly behind the attacks."</p>
+                        </div>
+                    </article>
+
+                    <article>
+                        <h2 class="title"> This Week </h2>
+                            <div class="col-sm-3">
+                                <img src="http://lorempixel.com/200/100/city/2" />
+                            </div>
+                            <div class="col-sm-9">
+                                <p><b>GoldenEye the destroyer</b> Researchers from both Comae Technologies and Kaspersky Lab found
+                                    that GoldenEye was a wiper, designed to destroy data. It used as its base a form of ransomware
+                                    called Petya (hence the NotPetya name) to encrypt crucial files, steal login credentials
+                                    and seize your hard drive, too. Even though the ransomware promised you'd get your data back
+                                    if you paid up, Comae founder Matt Suiche noticed that GoldenEye actually ended up destroying
+                                    several blocks of data. The original Petya encrypted files, but there was always a way to
+                                    reverse that, he noted. Researchers from Kaspersky called this the "worst-case" scenario
+                                    for the victims. "I wouldn't be surprised if they're trying to shut down a couple of facilities
+                                    that they're targeting," said Amanda Rousseau, a malware researcher at Endgame. Petya ransomware
+                                    cyber attack Getty Images GoldenEye started as an attack on a single organization, with the
+                                    ransomware attaching itself to a software update for MeDoc, Ukraine's most popular tax-filing
+                                    software. From that one victim, it spread to multibillion-dollar companies that were using
+                                    it.</p>
+                            </div>
+                    </article>
+                </div>
+            </section>
+
+                <aside class="col-sm-3 col-sm-pull-6">
+                    <img src="images/tech6.jpg">
+                    <ul>
+                        <li>customers</li>
+                        <li>supplies</li>
+                        <li>employees</li>
+                        <li>shareholders</li>
+                    </ul>
+                    <h2> Ex-Employee of Uber</h2>
+                    <div class="col-sm-9">
+                       <p> ex-employee wrote a blog post detailing how managers failed to act on her complaints about sexism at work. That resulted
+                        in an investigation by the former US Attorney General Eric Holder, which recommended ways in which the
+                        company could change its culture and be run better.</p>
+                    </div>
+                </aside>
+                <aside class="col-sm-3">
+                    <img src="images/tech7.jpg"class="img-circle">
+                    <ol>
+                        <li>customers</li>
+                        <li>supplies</li>
+                        <li>employees</li>
+                        <li>shareholders</li>
+                    </ol>
+                    <h2> Technology and the world</h2>
+                    <div class="col-sm-9">
+                        <p> All of the examples on this page will show a navigation bar that takes up too much space on small screens
+                            (however, the navigation bar will be on one single line on large screens - because Bootstrap is responsive).
+                            This problem (with the small screens) will be solved in the last example on this page.</p>
+                    </div>
+                </aside>
+
+        </div>
+    </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class=" col-sm-6 col-sm-push-3"></div>
+                <div class=" col-sm-6 col-sm-pull-3">
+                    <a name="contact">Contact Us</a>
+                    <div id="googleMap" style="width:10%;height:40px;"></div>
+
+                        <script>
+                        function myMap() {
+                        var mapProp= {
+                            center:new google.maps.LatLng(51.508742,-0.120850),
+                            zoom:5,
+                        };
+                        var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                        }
+                        </script>
+                         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8SdQZkYhwH2OI2PlVJzhuGXMgXs9prws&callback=myMap"></script>
+                    <p><strong>Suso Technology</strong></p>
+                                2304 Cromwell Dr
+                                    Arlington, TX 76018
+                                Tel: 347-679-3972
+                                Email: Info@Susotech.com
+                                www.Susotech.com
+                </div>
+            </div>
+        </div>
+
+    <footer class="container-fluid">
+        Suso Technology Copyright 2017
+    </footer>
+</body>
+
+</html>
